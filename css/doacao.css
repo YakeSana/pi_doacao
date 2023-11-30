@@ -1,6 +1,6 @@
 .bg {
   padding-bottom: 38%;
-  background-image: url( '../img/bg_doacao.png' );
+  background-image: url('../img/bg_doacao.png');
   background-size: cover;
 }
 
@@ -10,61 +10,44 @@
 }
 
 .inline {
-  display:inline-block;
+  display: inline-block;
 }
 
-body{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-footer {
-  margin-top: auto;
-  
-}
-
-.logo_text {
-  font-family: 'Mina', sans-serif;
-  font-size: 200%;
-  color: rgba(49, 97, 47, 0.8);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  bottom: 5.8%;
-}
-
-.logos_parceiros {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.bg_dono {
+  background: linear-gradient(180deg, rgba(255, 236, 73, 0.4) 0%, rgba(255, 255, 255, 0.48) 0.01%, rgba(217, 217, 217, 0) 100%);
   border-radius: 9px;
-  bottom: 11.8%;
 }
 
-footer section{
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Raleway', sans-serif;
-  color: rgba(80, 85, 92, 1);
-  font-size:85%
 
-}
-
-.align_img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.icon_text {
+  text-align: left;
+  font-weight: 600;
+  font-size: 200%;
 }
 
 @media only screen and (max-width: 576px) {
   .vanish_sm {
     display: none;
   }
+
   .logos_parceiros {
     max-width: 85%;
   }
+
   .logo {
     max-width: 250%;
   }
-  footer section{
-    font-size:55%
+
+  footer section {
+    font-size: 55%
+  }
+
+  .icon_text {
+    font-size: 85%;
+  }
+
+  .icon {
+    max-width: 135%;
   }
 }
