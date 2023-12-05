@@ -30,16 +30,86 @@
   line-height: 220%;
 }
 
-.sombra{
-box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.25);
-border-radius: 9px;
+.sombra {
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  border: none;
 }
 
-.dono_button{
-display: block;
-width: 100%;
-border: transparent;
-text-decoration: none;
+.dono_button {
+  display: block;
+  width: 100%;
+  border: transparent;
+  text-decoration: none;
+}
+
+#filler_flex {
+  flex: 0 0 45%;
+}
+
+#flex_content {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+
+}
+
+.dono_button:hover {
+  font-weight: 600;
+}
+
+.flex_filler1 {
+  flex: 0 0 35%;
+}
+
+
+.ferramentadica {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  max-width: 400px;
+  white-space: pre-wrap;
+}
+
+
+.caixaimagemtool {
+  position: relative;
+  display: inline-block;
+}
+
+
+.caixaimagemtool:hover .ferramentadica {
+  display: block;
+}
+
+form div input {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 13px;
+  width: auto;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.inputgrande {
+  width: 52%;
+}
+
+.flexy_input {
+  flex: 0 0 26%;
+}
+
+.flexy_input_filler {
+  flex: 0 0 48%;
 }
 
 @media only screen and (max-width: 576px) {
@@ -72,7 +142,40 @@ text-decoration: none;
     background-image: none;
     background: linear-gradient(180deg, rgba(250, 255, 0, 0) 31.41%, rgba(254, 242, 242, 0.2) 61.83%), #FFE732;
     border-radius: 9px;
-    padding-bottom: 100%;
 
+  }
+
+  #filler_flex {
+    flex: 0 0 5%;
+  }
+
+  #flex_content {
+    flex: 0 0 90%
+  }
+
+  .flex_filler1 {
+    flex: 0 0 25%;
+  }
+
+  .ferramentadica {
+    right: 50%;
+  }
+
+  input.inputpequeno {
+    font-size: 110%;
+    width: 35%;
+  }
+
+  input.inputgrande {
+    font-size: 110%;
+    width: 75%;
+  }
+
+  .flexy_input {
+    flex: 0 0 37.5%;
+  }
+
+  .flexy_input_filler {
+    flex: 0 0 25%;
   }
 }
