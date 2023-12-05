@@ -2,9 +2,7 @@
   padding-bottom: 38%;
   background-image: url('../img/bg_doacao.png');
   background-size: cover;
-  background-size: contain;
-  background-repeat: no-repeat;
-
+  
 }
 
 .nunito {
@@ -28,18 +26,6 @@
   font-weight: 600;
   font-size: 200%;
   line-height: 220%;
-}
-
-.sombra{
-box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.25);
-border-radius: 9px;
-}
-
-.dono_button{
-display: block;
-width: 100%;
-border: transparent;
-text-decoration: none;
 }
 
 @media only screen and (max-width: 576px) {

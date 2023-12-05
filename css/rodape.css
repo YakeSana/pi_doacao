@@ -10,11 +10,11 @@ footer {
 
 }
 
-.inline {
+footer .inline {
     display: inline-block;
 }
 
-.logo_text {
+footer .logo_text {
     font-family: 'Mina', sans-serif;
     font-size: 200%;
     color: rgba(49, 97, 47, 0.8);
@@ -22,7 +22,7 @@ footer {
     bottom: 5.8%;
 }
 
-.logos_parceiros {
+footer .logos_parceiros {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 9px;
     bottom: 11.8%;
@@ -36,27 +36,33 @@ footer section {
     font-size: 85%
 }
 
-button.clickable_text {
+footer button.clickable_text {
     background: none;
     border: none;
 }
 
-.modal_button{
-
+footer .modal_button {
     right: 50%;
-    
+
+}
+
+footer .vertical_a {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    column-gap: 5px;
 }
 
 @media only screen and (max-width: 576px) {
-    .vanish_sm {
+    footer .vanish_sm {
         display: none;
     }
 
-    .logos_parceiros {
+    footer .logos_parceiros {
         max-width: 85%;
     }
 
-    .logo {
+    footer .logo {
         max-width: 250%;
     }
 
@@ -66,7 +72,7 @@ button.clickable_text {
 }
 
 
-.jw-modal {
+footer .jw-modal {
     display: none;
     position: fixed;
     inset: 0;
@@ -76,11 +82,11 @@ button.clickable_text {
     overflow: auto;
 }
 
-.jw-modal.open {
+footer .jw-modal.open {
     display: block;
 }
 
-.jw-modal-body {
+footer .jw-modal-body {
     padding: 20px;
     background: #fff;
 }
